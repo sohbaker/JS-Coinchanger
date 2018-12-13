@@ -1,5 +1,5 @@
-function changeCoins() {
-  return 0;
+function changeCoins(money) {
+  return money;
 };
 
 module.exports = { changeCoins };
