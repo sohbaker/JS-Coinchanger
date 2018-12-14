@@ -10,5 +10,12 @@ describe('coinchanger', () => {
       expect(coinchanger.changeCoins(3)).toEqual([2, 1]);
       });
 
+    it('returns 200, 100 when given 300', () => {
+      expect(coinchanger.changeCoins(300)).toEqual([200, 100]);
+      });
+
+    it('returns 200, 200, 100 when given 500', () => {
+      expect(coinchanger.changeCoins(500)).toEqual([200, 200, 100]);
+      });
   });
 });
